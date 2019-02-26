@@ -11,6 +11,3 @@
  * @param  {string} input
  * @return {string}
  */
-function rle(input) {
-
-}

@@ -12,6 +12,8 @@
  * @param  {string} input строка с произвольным предложением.
  * @return {string}
  */
-function capitalize(input) {
+var text = prompt("enter string");
 
+function capitalize(text) {
+    return new.charAt(0).toUpperCase() + new.slice(1);
 }
