@@ -16,4 +16,6 @@
  */
 function getMinMax(input) {
 
+    //Math.min(...arr);
+
 }
