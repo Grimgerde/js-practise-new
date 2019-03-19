@@ -11,6 +11,10 @@
  * @param  {string} second вторая строка
  * @return {boolean}
  */
-function anagram(first, second) {
-
+const transform = str => str.toLowerCase().split("").filter(function (item) { return item != " "; }).sort().join("");
+function anagram(str1, str2) {
+    if (str1 === str2) return false;
+    return transform(str1) === transform(str2);
 }
+var str1 = "кабан", str2 = "б анка";
+console.log(anagram(str1, str2));

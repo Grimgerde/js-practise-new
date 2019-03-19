@@ -18,7 +18,4 @@
  * @param  {number} maxCalls максимальное количество вызовов
  * @return {Function}
  */
-function limitCalls(fn, maxCalls) {
-    
 
-}

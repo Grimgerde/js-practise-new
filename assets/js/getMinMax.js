@@ -14,8 +14,12 @@
  * @param  {string} input входная строка
  * @return {{min: number, max: number}} объект с минимумом и максимумом
  */
-function getMinMax(input) {
-
-    //Math.min(...arr);
-
+function getMinMax(str) {
+    arr1 = str.match(/-\d+.\d+|\d+.\d+|-\d+|\d+|Infinity/g).map(Number);
+    const min = Math.min(...arr1); //Деструктуризация.
+    const max = Math.max(...arr1);
+    return { min, max };
 }
+
+var str = "1.gh11.1 и 6.455,Infinity -2, но -8, а затем -15, то есть 2.7 и -1028";
+console.log(getMinMax(str));
